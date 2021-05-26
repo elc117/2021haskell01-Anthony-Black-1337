@@ -16,9 +16,11 @@ svgCircle x y r style =
 -- A opacidade pode não ser suportada em alguns visualizadores de SVG.
 svgAll :: String
 svgAll = 
-  svgBegin 500 500 ++ 
-  (svgCircle 60 60 50 "rgb(10, 145, 32, 0.4)") ++ 
-  (svgCircle 90 90 50 "rgb(105, 14, 30, 0.4)") ++ 
+  svgBegin 500 500 ++
+  (svgCircle 60 60 70 "rgb(255, 255, 0, 0.9)") ++ 
+  (svgCircle 200 200 30 "rgb(255, 0, 0, 0.9)") ++ 
+  (svgCircle 300 300 40 "rgb(10, 145, 32, 0.9)") ++
+  (svgCircle 400 400 50 "rgb(18, 10, 143, 0.9)") ++
   svgEnd
 
 main :: IO ()
